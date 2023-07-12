@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programacao orientada a objetos</title>
+</head>
+<body>
+    
+
+    <script> 
+
+   class animaisSilvestres{
+    constructor(nome, especie, habitat){
+        this.nome = nome;
+        this.especie = especie;
+        this.habitat = habitat;
+    }
+
+    mover(){
+        console.log(this.nome + "esta andando em terra");
+    } 
+
+  
+   }
+
+   class animalMarinho{
+        constructor(nome, especie, habitat){
+            this.nome = nome;
+            this.especie = especie;
+            this.habitat = habitat;
+
+
+        } 
+
+        mover(){
+            console.log(`${this.nome} esta nadando no oceano`)
+        }
+    }
+
+    let leao = new animaisSilvestres("Leao", 'Panthera leo', "savana");
+    let elefante = new animaisSilvestres("Elefante", "Loxodonta", "Floresta");
+    let baleia = new animalMarinho("Baleia", "Cetacea", "Oceano")
+    let tubarao = new animalMarinho("Tubarao", "Selachimorpha", "Oceano")
+
+    tubarao.mover();
+ 
+    
+    </script>
+</body>
+</html>
